@@ -1,0 +1,170 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: 14px;
+  line-height:1.2;
+  color: #131313;
+}
+ul,
+p,
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li{
+  padding-left: 0;
+}
+a{
+  text-decoration:none;
+  color: inherit;
+}
+
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  margin-right: 70px;
+}
+
+.menu__list{
+  display: flex;
+  
+}
+
+.menu__item + .menu__item{
+  padding-left: 10px;
+
+}
+
+.menu__link{
+text-transform: uppercase;
+padding: 42px 20px;
+transition: all .3s;
+}
+
+.menu__link:hover,
+.menu__link:focus{
+  background-color: #131313;
+  color: #ffffff;
+}
+
+.bike{
+  padding: 100px 0 150px;
+}
+
+.bike__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bike__column-slider{
+   flex-basis: 630px;
+   margin-left: 30px;
+   max-width: 630px;
+  }
+ .bike__title{
+  font-weight: 700;
+  font-size: 64px;
+  margin: 60px 0 5px;
+ }
+
+ .bike__subtitle{
+  
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.22;
+  margin-bottom: 56px;
+  color: #6F6F6F;
+ }
+
+ .bike__text {
+   max-width: 420px;
+   margin-bottom: 20px;
+ }
+
+.bike__link{
+  display: inline-block;
+  background-color: #131313;
+  color: #ffffff;
+  margin-top: 80px;
+  padding: 28px 81px;
+  font-size: 20px;
+  letter-spacing: 1.1em;
+}
+.bike-slaider .slick-dots{
+  right: 0;
+  top: 52px;
+}
+.slick-dots{
+  position: absolute;
+  
+}
+
+.slick-dots li + li{
+  padding-top: 10px;
+}
+
+.slick-dots button{
+  font-size: 0;
+  padding: 0;
+  border: none;
+  background-color: #131313;
+  width: 2px;
+  height: 25px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.slick-dots button:hover,
+.slick-dots button:focus,
+.slick-active button{
+  background-color: #FF4040;
+}
+
+.bike__list{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.bike__list-item{
+  min-width: 160px;
+  min-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
+}
+
+.bike__list-num{
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.bike__list-text{
+  
+  font-size: 12px;
+  line-height: 1.25;
+  margin: auto 0;
+
+ 
+}
